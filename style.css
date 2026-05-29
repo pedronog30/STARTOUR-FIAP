@@ -1,0 +1,303 @@
+/* ===== RESET E BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a1a;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== HEADER / NAV ===== */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(10, 10, 26, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.nav {
+  padding: 16px 0;
+}
+
+.nav .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-nav {
+  flex-direction: row !important;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-size: 0.95rem;
+  padding: 6px 12px;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #4d8aff !important;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  background-image: url('./img/hero.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.hero-text {
+  max-width: 550px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 32px;
+}
+
+.hero-buttoms {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-buttoms a {
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.2s;
+}
+
+.hero-buttoms a:first-child {
+  background-color: #1e6bff;
+  color: #ffffff;
+}
+
+.hero-buttoms a:last-child {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.hero-buttoms a:hover {
+  opacity: 0.85;
+}
+
+/* ===== CONTENT ===== */
+.content {
+  padding: 60px 80px;
+}
+
+/* ===== STATS ===== */
+.data-info {
+  background-color: #111133;
+  border-radius: 12px;
+  padding: 32px 40px;
+  margin-bottom: 60px;
+}
+
+.data-info ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.data-info li {
+  text-align: center;
+  flex: 1;
+  padding: 0 24px;
+  border-right: 1px solid rgba(255,255,255,0.15);
+  color: #aaaaaa;
+}
+.data-info li:last-child {
+  border-right: none;
+}
+
+.data-info li strong {
+  display: block;
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+/* ===== SEÇÃO DE EXPERIÊNCIAS ===== */
+content h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.content > p {
+  text-align: center;
+  color: #aaaaaa;
+  margin-bottom: 40px;
+}
+
+/* ===== CARDS ===== */
+.cards-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards-container a {
+  text-decoration: none;
+  color: inherit;
+  flex: 1;
+  min-width: 260px;
+  max-width: 340px;
+}
+
+.card-viagem {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 380px;
+}
+
+.card-viagem:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(30, 107, 255, 0.3);
+}
+
+.card-viagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-viagem h3,
+.card-viagem p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #ffffff;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.card-viagem h3 {
+  bottom: 90px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+
+.card-viagem p:last-child {
+  bottom: 20px;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.card-viagem p:nth-child(3) {
+  color: #dddddd;
+}
+
+.card-viagem p:last-child strong {
+  color: #4d8aff;
+}
+
+.card-viagem::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 65%;
+  background: linear-gradient(to top, rgba(5,5,20,0.95) 0%, transparent 100%);
+  z-index: 1;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 24px 60px;
+    align-items: flex-start;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .content {
+    padding: 40px 24px;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+}
+
+/* Texto do hero branco com sombra para legibilidade */
+.hero-text h1,
+.hero-text p {
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Content fundo escuro */
+.content {
+  background-color: #0a0a1a;
+}
+
+/* Nav horizontal no topo */
+.nav .container {
+  flex-direction: row;
+}
+
+.navbar-nav {
+  flex-direction: row !important;
+}
+
+/* Card — imagem em cima, texto embaixo */
+.card-viagem {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-viagem img {
+  order: 0;
+}
+
+.card-viagem h3,
+.card-viagem p {
+  order: 1;
+  color: #ffffff;
+}
