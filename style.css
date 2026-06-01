@@ -262,15 +262,84 @@ content h2 {
   }
 
   .hero-text h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .hero-buttoms {
+    flex-direction: column;
   }
 
   .content {
-    padding: 40px 24px;
+    padding: 40px 16px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-container a {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .data-info ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .data-info li {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    padding-bottom: 16px;
+  }
+
+  .data-info li:last-child {
+    border-bottom: none;
+  }
+}
+/* Garante que o nav aparece no desktop */
+@media (min-width: 769px) {
+  .navbar-collapse {
+    display: flex !important;
   }
 
   .navbar-nav {
-    display: none;
+    flex-direction: row !important;
+    gap: 24px;
+    margin: 0 auto;
+  }
+
+  .navbar-toggler {
+    display: none !important;
+  }
+}
+
+/* Estilo do botão hamburguer no mobile */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Menu aberto no mobile */
+@media (max-width: 768px) {
+  .navbar-collapse.show {
+    background-color: rgba(10, 10, 26, 0.95);
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 8px;
+  }
+
+  .navbar-nav {
+    flex-direction: column !important;
+    gap: 8px;
   }
 }
 
