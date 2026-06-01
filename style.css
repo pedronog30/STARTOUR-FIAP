@@ -409,3 +409,10 @@ content h2 {
   order: 1;
   color: #ffffff;
 }
+
+.data-info li i {
+  font-size: 2rem;
+  color: #4d8aff;
+  display: block;
+  margin-bottom: 8px;
+}
