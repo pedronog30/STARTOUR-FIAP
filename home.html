@@ -16,46 +16,46 @@
       <nav class="nav navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="home.html">
-            <img
-              src="./img/startour_logo_transparente.png"
-              alt="Startour"
-              height="40"
-            />
+            <img src="./img/startour_logo_transparente.png" alt="Startour" height="40" />
           </a>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuNav"
-          >
+          <!-- Links desktop -->
+          <div class="collapse navbar-collapse" id="menuDesktop">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="home.html">Início</a></li>
+              <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+              <li class="nav-item"><a class="nav-link" href="exp.html">Experimente</a></li>
+              <li class="nav-item"><a class="nav-link" href="prep.html">Preparação</a></li>
+              <li class="nav-item"><a class="nav-link" href="seg.html">Segurança</a></li>
+              <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <!-- Botão hamburguer (só no mobile) -->
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuNav">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-<div class="collapse navbar-collapse" id="menuNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="exp.html">Experimente</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="prep.html">Preparação</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="seg.html">Segurança</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQ</a>
-            </li>
-          </ul>
         </div>
       </nav>
     </header>
+
+    <!-- Offcanvas mobile (fora do header) -->
+    <div class="offcanvas offcanvas-end" id="menuNav">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-white">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="home.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="exp.html">Experimente</a></li>
+          <li class="nav-item"><a class="nav-link" href="prep.html">Preparação</a></li>
+          <li class="nav-item"><a class="nav-link" href="seg.html">Segurança</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Imagem de fundo + título + botões -->
     <section class="hero">
@@ -97,10 +97,8 @@
           <div class="card-viagem">
             <img src="./img/voosuborbital.png" />
             <h3>Voo Suborbital</h3>
-            <p>
-              Sinta a emoção de ultrapassar a atmosfera e ver a Terra do espaço.
-            </p>
-            <p>A partir de <strong>$...</strong></p>
+            <p>Sinta a emoção de ultrapassar a atmosfera e ver a Terra do espaço.</p>
+            <p>A partir de <strong>$50.000</strong></p>
           </div>
         </a>
 
@@ -109,7 +107,7 @@
             <img src="./img/orbitaatt.png" />
             <h3>Órbita da Terra</h3>
             <p>Experimente a microgravidade e contemple nosso planeta azul.</p>
-            <p>A partir de <strong>$...</strong></p>
+            <p>A partir de <strong>$1.200.000</strong></p>
           </div>
         </a>
 
@@ -118,11 +116,12 @@
             <img src="./img/explunar.png" />
             <h3>Experiência Lunar</h3>
             <p>Seja um dos primeiros turistas a pisar na superfície da Lua.</p>
-            <p>A partir de <strong>$...</strong></p>
+            <p>A partir de <strong>$12.000.000</strong></p>
           </div>
         </a>
       </div>
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
