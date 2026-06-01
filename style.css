@@ -118,6 +118,11 @@ body {
   padding: 60px 80px;
 }
 
+.content h2 {
+  color: #ffffff !important;
+  text-align: center !important;
+}
+
 /* ===== STATS ===== */
 .data-info {
   background-color: #111133;
@@ -182,6 +187,8 @@ content h2 {
   flex: 1;
   min-width: 260px;
   max-width: 340px;
+  position: relative;
+  display: block;
 }
 
 .card-viagem {
@@ -228,6 +235,8 @@ content h2 {
 
 .card-viagem p:nth-child(3) {
   color: #dddddd;
+  top: 16px;
+  display: none;
 }
 
 .card-viagem p:last-child strong {
