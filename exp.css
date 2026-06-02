@@ -1,0 +1,13 @@
+/* Imagens dos cards de experiência */
+.card-exp img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Em telas médias pra cima (tablet/PC), foto fica ao lado e mais alta */
+@media (min-width: 768px) {
+  .card-exp img {
+    height: 100%;
+  }
+}
