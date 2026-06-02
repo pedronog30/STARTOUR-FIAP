@@ -3,11 +3,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segurança</title>
+    <title>Startour - Segurança</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./seg.css">
+    <link rel="stylesheet" href="seg.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 </head>
 <body>
-    
+    <!doctype html>
+<html lang="pt-BR">
+
+    <!-- navbar -->
+    <header class="topo">
+      <nav class="navbar navbar-expand-lg barra-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+            <img src="./img/startour_logo_transparente.png" alt="Startour" height="40" />
+          </a>
+
+          <div class="collapse navbar-collapse" id="menuDesktop">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" href="home.html">Início</a></li>
+              <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+              <li class="nav-item"><a class="nav-link" href="exp.html">Experimente</a></li>
+              <li class="nav-item"><a class="nav-link" href="prep.html">Preparação</a></li>
+              <li class="nav-item"><a class="nav-link pagina-ativa" href="seg.html">Segurança</a></li>
+              <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- menu mobile -->
+    <div class="offcanvas offcanvas-end" id="menuNav">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-white">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="home.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="exp.html">Experimente</a></li>
+          <li class="nav-item"><a class="nav-link" href="prep.html">Preparação</a></li>
+          <li class="nav-item"><a class="nav-link" href="seg.html">Segurança</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- banner principal -->
+    <section class="banner">
+      <div class="banner-conteudo">
+        <span class="banner-tag">SEGURANÇA ALÉM DA ATMOSFERA</span>
+        <h1>Sua jornada,<br>nossa <span class="roxo">prioridade.</span></h1>
+        <p>Protocolos desenvolvidos para garantir a máxima segurança em cada etapa da sua jornada espacial.</p>
+        <a href="#simulador" class="btn-principal">
+          <i class="bi bi-rocket-takeoff-fill me-2"></i>Realizar avaliação espacial
+        </a>
+      </div>
+    </section>
+
+    <!-- protocolos -->
+    <section class="bloco" id="protocolos">
+      <div class="container">
+        <p class="tag-secao">NOSSOS PROTOCOLOS</p>
+        <h2 class="titulo-secao">Protocolos de Segurança</h2>
+        <div class="row g-4 mt-2">
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card-protocolo">
+              <i class="bi bi-heart-pulse icone-card"></i>
+              <h3>Avaliação Médica</h3>
+              <p>Exames completos para garantir que cada passageiro esteja apto para a jornada espacial.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card-protocolo">
+              <i class="bi bi-rocket-takeoff icone-card"></i>
+              <h3>Treinamento Pré-Voo</h3>
+              <p>Treinamentos intensivos que simulam situações reais do ambiente espacial.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card-protocolo">
+              <i class="bi bi-display icone-card"></i>
+              <h3>Monitoramento 24/7</h3>
+              <p>Acompanhamento contínuo de todos os sistemas e indicadores durante a missão.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card-protocolo">
+              <i class="bi bi-people icone-card"></i>
+              <h3>Equipe Especializada</h3>
+              <p>Astronautas, médicos e engenheiros altamente qualificados em cada etapa.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- riscos -->
+    <section class="bloco bloco-escuro" id="riscos">
+      <div class="container">
+        <p class="tag-secao">RISCOS DA VIAGEM ESPACIAL</p>
+        <h2 class="titulo-secao">Conheça os desafios</h2>
+        <div class="row g-4 mt-2">
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card-risco">
+              <div class="texto-risco">
+                <h3>Microgravidade</h3>
+                <p>Pode causar tontura, enjoo e desorientação nos primeiros dias de adaptação.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card-risco img-forca">
+              <div class="texto-risco">
+                <h3>Forças G</h3>
+                <p>Sentidas durante o lançamento e retorno à Terra. Treinamento prévio é essencial.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card-risco img-radiacao">
+              <div class="texto-risco">
+                <h3>Radiação Espacial</h3>
+                <p>Exposição controlada e monitorada por tecnologias avançadas de proteção.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card-risco img-saude">
+              <div class="texto-risco">
+                <h3>Condições Médicas</h3>
+                <p>Problemas cardíacos ou respiratórios exigem avaliação e acompanhamento especial.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- simulador -->
+    <section class="bloco" id="simulador">
+      <div class="container">
+        <p class="tag-secao">SIMULADOR DE APTIDÃO ESPACIAL</p>
+        <h2 class="titulo-secao">Descubra se você está pronto</h2>
+        <p class="subtitulo-secao">Responda algumas perguntas e descubra seu índice de aptidão para viagens espaciais.</p>
+
+        <div class="row g-4 mt-2 justify-content-center">
+
+          <!-- formulário -->
+          <div class="col-12 col-lg-7">
+            <div class="caixa-form">
+              <div class="row g-3">
+
+                <div class="col-12 col-md-7">
+                  <label class="rotulo">Nome completo</label>
+                  <input type="text" id="nome" class="campo" placeholder="Digite seu nome" />
+                </div>
+
+                <div class="col-12 col-md-5">
+                  <label class="rotulo">Idade</label>
+                  <input type="number" id="idade" class="campo" placeholder="Ex: 25" min="1" max="120" />
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <label class="rotulo">Problemas cardíacos?</label>
+                  <div class="opcoes-radio">
+                    <label><input type="radio" name="cardiaco" value="sim" /> Sim</label>
+                    <label><input type="radio" name="cardiaco" value="nao" checked /> Não</label>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <label class="rotulo">Problemas respiratórios?</label>
+                  <div class="opcoes-radio">
+                    <label><input type="radio" name="respiratorio" value="sim" /> Sim</label>
+                    <label><input type="radio" name="respiratorio" value="nao" checked /> Não</label>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <label class="rotulo">Histórico de vertigem?</label>
+                  <div class="opcoes-radio">
+                    <label><input type="radio" name="vertigem" value="sim" /> Sim</label>
+                    <label><input type="radio" name="vertigem" value="nao" checked /> Não</label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label class="rotulo">Condicionamento físico</label>
+                  <select id="condicionamento" class="campo">
+                    <option value="">Selecione seu nível</option>
+                    <option value="alto">Alto — pratico exercícios regularmente</option>
+                    <option value="medio">Médio — pratico às vezes</option>
+                    <option value="baixo">Baixo — sedentário</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <button class="btn-enviar" id="btn-analisar">
+                    <i class="bi bi-rocket-takeoff-fill me-2"></i>Analisar Perfil
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- resultado -->
+          <div class="col-12 col-lg-5">
+            <div class="caixa-resultado" id="resultado-card">
+              <p class="tag-secao">RESULTADO</p>
+              <div class="circulo-nota">
+                <span id="nota">—</span>
+                <span class="de-cem">/100</span>
+              </div>
+              <p class="legenda-nota">Índice de Aptidão Espacial</p>
+              <p id="msg-inicial" style="color:#666; font-size:0.85rem; margin-top:16px;">Preencha o formulário ao lado e clique em Analisar Perfil para ver seu resultado.</p>
+              <div id="badge-resultado" style="display:none"></div>
+              <div id="lista-apto" style="display:none" class="lista-destinos">
+                <p class="titulo-lista">Apto para:</p>
+                <ul id="destinos"></ul>
+              </div>
+              <p id="obs-resultado" style="display:none" class="obs-extra"></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- checklist -->
+        <section class="bloco bloco-escuro" id="checklist">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+
+            <div class="col-12 col-lg-3">
+                <p class="tag-secao">CHECKLIST PRÉ-EMBARQUE</p>
+                <h2 class="titulo-secao text-start">Preparação final</h2>
+                <p class="subtitulo-secao text-start">Confira os itens obrigatórios antes da sua missão espacial.</p>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="caixa-checklist">
+                <div class="row g-3 text-center">
+                    <div class="col-6 col-md-4">
+                    <i class="bi bi-heart-pulse icone-check"></i>
+                    <p class="nome-item">Exames médicos</p>
+                    <input type="checkbox" class="item-check" />
+                    </div>
+                    <div class="col-6 col-md-4">
+                    <i class="bi bi-rocket-takeoff icone-check"></i>
+                    <p class="nome-item">Treinamento concluído</p>
+                    <input type="checkbox" class="item-check" />
+                    </div>
+                    <div class="col-6 col-md-4">
+                    <i class="bi bi-shield-check icone-check"></i>
+                    <p class="nome-item">Equipamentos aprovados</p>
+                    <input type="checkbox" class="item-check" />
+                    </div>
+                    <div class="col-6 col-md-4">
+                    <i class="bi bi-file-earmark-check icone-check"></i>
+                    <p class="nome-item">Seguro espacial ativo</p>
+                    <input type="checkbox" class="item-check" />
+                    </div>
+                    <div class="col-6 col-md-4">
+                    <i class="bi bi-pen icone-check"></i>
+                    <p class="nome-item">Termo assinado</p>
+                    <input type="checkbox" class="item-check" />
+                    </div>
+                </div>
+                <button class="btn-enviar mt-4" id="btn-embarque">
+                    <i class="bi bi-shield-check me-2"></i>Verificar Embarque
+                </button>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="caixa-status">
+                <p class="tag-secao">STATUS DO EMBARQUE</p>
+                <div id="icone-status">
+                    <i class="bi bi-lock" style="font-size:2.5rem; color:#7c7c9e;"></i>
+                </div>
+                <p id="texto-status" class="msg-status">Complete o checklist para verificar.</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+    <!-- estatísticas -->
+        <section class="bloco" id="estatisticas">
+        <div class="container">
+            <div class="row g-4 justify-content-center text-center">
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="item-stat">
+                <i class="bi bi-rocket-takeoff icone-stat"></i>
+                <p class="numero-stat">99,98%</p>
+                <p class="desc-stat">Taxa de sucesso em missões</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="item-stat">
+                <i class="bi bi-people icone-stat"></i>
+                <p class="numero-stat">12.500+</p>
+                <p class="desc-stat">Passageiros treinados</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="item-stat">
+                <i class="bi bi-shield-check icone-stat"></i>
+                <p class="numero-stat">0</p>
+                <p class="desc-stat">Incidentes graves</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="item-stat">
+                <i class="bi bi-cpu icone-stat"></i>
+                <p class="numero-stat">24/7</p>
+                <p class="desc-stat">Monitoramento por IA</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="item-stat">
+                <i class="bi bi-clock-history icone-stat"></i>
+                <p class="numero-stat">10+</p>
+                <p class="desc-stat">Anos de experiência</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+    <script src="seg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
 </body>
 </html>
