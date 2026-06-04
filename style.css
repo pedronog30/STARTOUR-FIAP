@@ -437,7 +437,7 @@ content h2 {
 }
 
 .hero-preparacao {
-  height: 450px;
+  height: 520px;
   padding: 120px 0 80px;
   color: rgb(255, 255, 255);
 
@@ -451,7 +451,7 @@ content h2 {
     url("./img/preparação.png");
   
   background-size: 100%;
-  background-position: center right;
+  background-position: bottom right;
   background-repeat: no-repeat;
 }
 
@@ -477,4 +477,62 @@ content h2 {
   line-height: 1.2;
   margin-bottom: 20px;
   font-family: 'Orbitron', sans-serif;
+}
+
+.etapas-preparacao {
+  background-color: #050816;
+  color: white;
+}
+
+.etapas-preparacao p {
+  color: #c7c9d9;
+}
+
+.card-etapa {
+  height: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  background: #050816;;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.card-etapa span {
+  color: #3d8bff;
+  font-size: 2.4rem;
+  font-weight: 650;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.card-etapa span i{
+    color: #3d8bff;
+    font-size: 1.8rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(61, 139, 255, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #3d8bff;
+}
+
+.card-etapa h3 {
+  margin: 0px 25px;
+  font-size: 1.2rem;
+}
+
+.card-etapa p {
+  margin: 25px;
+  font-size: 0.95rem;
+}
+
+.card-etapa img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: #ffffff1f solid 0.1px;
 }
