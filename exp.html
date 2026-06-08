@@ -6,71 +6,201 @@
   <title>Experiências StarTour</title>
 
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="exp.css">
 </head>
 <body>
 
-  <div class="container my-5">
+  <!-- Barra de navegação -->
+  <header class="header">
+    <nav class="nav navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">
+          <img src="./img/startour_logo_transparente.png" alt="Startour" height="40" />
+        </a>
 
-    <!-- Voo Suborbital -->
-    <div class="card card-exp mb-4 shadow-sm">
-      <div class="row g-0">
-        <div class="col-12 col-md-8 p-4">
-          <h3>Voo Suborbital</h3>
-          <p>Sinta a emoção de cruzar a fronteira do espaço em uma jornada inesquecível. Você atingirá a linha de Kármán, a 100 km de altitude, onde experimentará alguns minutos de gravidade zero e contemplará a curvatura da Terra contra o negro do espaço.</p>
-          <button class="btn btn-primary">confirmar</button>
+        <!-- Links desktop -->
+        <div class="collapse navbar-collapse" id="menuDesktop">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="home.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="exp.html">Experimente</a></li>
+            <li class="nav-item"><a class="nav-link" href="prep.html">Preparação</a></li>
+            <li class="nav-item"><a class="nav-link" href="seg.html">Segurança</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          </ul>
         </div>
-        <div class="col-12 col-md-4">
-          <img src="img/voosuborbital.png" alt="Voo Suborbital">
-        </div>
+
+        <!-- Botão hamburguer (só no mobile) -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
-    </div>
+    </nav>
+  </header>
 
-    <!-- Órbita da Terra -->
-    <div class="card card-exp mb-4 shadow-sm">
-      <div class="row g-0">
-        <div class="col-12 col-md-8 p-4">
-          <h3>Órbita da Terra</h3>
-          <p>Dê voltas completas ao redor do nosso planeta a mais de 28.000 km/h. Você verá um nascer e pôr do sol a cada 90 minutos e observará continentes, oceanos e auroras como pouquíssimos seres humanos já tiveram o privilégio de ver.</p>
-          <button class="btn btn-primary">confirmar</button>
-        </div>
-        <div class="col-12 col-md-4">
-          <img src="img/orbitaterra.png" alt="Órbita da Terra">
-        </div>
-      </div>
+  <!-- Menu do celular (offcanvas do Bootstrap) -->
+  <div class="offcanvas offcanvas-end" id="menuNav">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title text-white">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
     </div>
-
-    <!-- Estadia Espacial -->
-    <div class="card card-exp mb-4 shadow-sm">
-      <div class="row g-0">
-        <div class="col-12 col-md-8 p-4">
-          <h3>Estadia Espacial</h3>
-          <p>Hospede-se entre as estrelas em nossa estação orbital de conforto premium. Durante vários dias, você viverá como um astronauta: dormindo flutuando, se alimentando em gravidade zero e admirando a Terra pela janela panorâmica.</p>
-          <button class="btn btn-primary">confirmar</button>
-        </div>
-        <div class="col-12 col-md-4">
-          <img src="img/orbitaatt.png" alt="Estadia Espacial">
-        </div>
-      </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="home.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="exp.html">Experimente</a></li>
+        <li class="nav-item"><a class="nav-link" href="prep.html">Preparação</a></li>
+        <li class="nav-item"><a class="nav-link" href="seg.html">Segurança</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+      </ul>
     </div>
-
-    <!-- Experiência Lunar -->
-    <div class="card card-exp mb-4 shadow-sm">
-      <div class="row g-0">
-        <div class="col-12 col-md-8 p-4">
-          <h3>Experiência Lunar</h3>
-          <p>Realize o sonho de tocar outro mundo. Viaje até a Lua e caminhe sobre sua superfície empoeirada, deixando suas próprias pegadas onde apenas um punhado de pessoas já esteve. Contemple a Terra surgindo no horizonte lunar.</p>
-          <button class="btn btn-primary">confirmar</button>
-        </div>
-        <div class="col-12 col-md-4">
-          <img src="img/explunar.png" alt="Experiência Lunar">
-        </div>
-      </div>
-    </div>
-
   </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-conteudo">
+      <p class="hero-kicker">StarTour · Turismo Espacial</p>
+      <h1 class="hero-titulo">Sua jornada além da Terra começa aqui</h1>
+      <p class="hero-sub">Voos suborbitais, órbitas ao redor do planeta e até a Lua. Escolha a experiência que combina com o explorador que existe em você.</p>
+      <a href="#experiencias" class="btn-hero">Ver experiências</a>
+    </div>
+  </section>
+
+  <div class="container my-5" id="experiencias">
+
+    <!-- Título -->
+    <div class="text-center mb-5">
+      <h1 class="titulo-exp">Escolha sua experiência</h1>
+      <p class="subtitulo-exp">De voos orbitais à experiência lunar, temos a jornada perfeita para você!</p>
+    </div>
+
+    <!-- Linha de cards (responsiva) -->
+    <div class="row g-4">
+
+      <!-- Voo Suborbital -->
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card-exp reveal" style="background-image: url('img/voosuborbital.png');">
+          <div class="card-exp-conteudo">
+            <h3>Voo Suborbital</h3>
+            <p class="preco">A partir de <span>$50.000</span></p>
+            <ul class="card-specs">
+              <li>Duração: 90 min</li>
+              <li>Altitude: 100 km</li>
+              <li>6 passageiros</li>
+              <li>3 dias de treino</li>
+            </ul>
+            <button class="btn-confirmar">confirmar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Órbita da Terra -->
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card-exp reveal" style="background-image: url('img/orbitaterra.png');">
+          <div class="card-exp-conteudo">
+            <h3>Órbita da Terra</h3>
+            <p class="preco">A partir de <span>$1.200.000</span></p>
+            <ul class="card-specs">
+              <li>Duração: 3 dias</li>
+              <li>Altitude: 400 km</li>
+              <li>4 passageiros</li>
+              <li>30 dias de treino</li>
+            </ul>
+            <button class="btn-confirmar">confirmar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Estadia Espacial -->
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card-exp reveal" style="background-image: url('img/orbitaatt.png');">
+          <div class="card-exp-conteudo">
+            <h3>Estadia Espacial</h3>
+            <p class="preco">A partir de <span>$5.000.000</span></p>
+            <ul class="card-specs">
+              <li>Duração: 7 dias</li>
+              <li>Estação orbital</li>
+              <li>8 passageiros</li>
+              <li>60 dias de treino</li>
+            </ul>
+            <button class="btn-confirmar">confirmar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experiência Lunar -->
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card-exp reveal" style="background-image: url('img/explunar.png');">
+          <div class="card-exp-conteudo">
+            <h3>Experiência Lunar</h3>
+            <p class="preco">A partir de <span>$12.000.000</span></p>
+            <ul class="card-specs">
+              <li>Duração: 12 dias</li>
+              <li>Órbita lunar</li>
+              <li>4 passageiros</li>
+              <li>90 dias de treino</li>
+            </ul>
+            <button class="btn-confirmar">confirmar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-5">
+          <p class="footer-marca">STARTOUR</p>
+          <p>Sua jornada começa aqui. Turismo espacial seguro, confortável e inesquecível.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6>Navegação</h6>
+          <a href="home.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="exp.html">Experimente</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="col-6 col-md-4">
+          <h6>Contato</h6>
+          <p>contato@startour.space</p>
+          <p>+55 (11) 9999-0000</p>
+          <p>São Paulo, Brasil</p>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 StarTour. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ====== JAVASCRIPT ====== -->
+  <script>
+    // ao clicar em "confirmar", mostra um aviso com o nome da experiência
+    document.querySelectorAll(".btn-confirmar").forEach(function (botao) {
+      botao.addEventListener("click", function () {
+        const card = botao.closest(".card-exp");
+        const nome = card.querySelector("h3").textContent;
+        alert(nome + " foi adicionado ao carrinho!");
+      });
+    });
+
+    // ====== ANIMAÇÃO: cards aparecem ao rolar a página ======
+    const observador = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (entrada) {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add("visivel");
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll(".reveal").forEach(function (el) {
+      observador.observe(el);
+    });
+  </script>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
