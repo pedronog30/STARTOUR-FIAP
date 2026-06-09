@@ -58,7 +58,7 @@ body {
 /* ===== HERO ===== */
 .hero {
   min-height: 100vh;
-  background-image: url('./img/imgatt.png');
+  background-image: url('../img/imgatt.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -419,7 +419,7 @@ content h2 {
 
 .faq {
   min-height: 100vh;
-  background-image: url('./img/faq.png');
+  background-image: url('../img/faq.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -456,7 +456,7 @@ content h2 {
       rgba(5, 8, 22, 0.75) 35%,
       rgba(5, 8, 22, 0.0) 50%
     ),
-    url("./img/preparação.png");
+    url("../img/preparação.png");
   
   background-size: cover;
   background-position: bottom right;

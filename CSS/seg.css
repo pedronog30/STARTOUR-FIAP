@@ -83,7 +83,7 @@ body {
 /* banner */
 .banner {
     min-height: 100vh;
-    background-image: url(.//img/ChatGPT\ Image\ 2\ de\ jun.\ de\ 2026\,\ 18_07_49.png);
+    background-image: url(../img/ChatGPT\ Image\ 2\ de\ jun.\ de\ 2026\,\ 18_07_49.png);
     background-size: cover;
     background-position: center;
     display: flex;
