@@ -1,5 +1,5 @@
 /* ===== RESET E BASE ===== */
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -436,6 +436,7 @@ content h2 {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
+
 .hero-preparacao {
   height: 700px;
   padding: 120px 0 80px;
@@ -667,5 +668,124 @@ content h2 {
         flex-direction: column;
         text-align: center;
     }
+  }
+.sobre {
+    min-height: 100vh;
+    padding: 100px 8%;
+    background-image: url("../img/imagemsobre.png");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+}
 
+.sobre-container {
+    text-align: center;
+    color: white;
+}
+
+.sobre-container h1 {
+    font-size: 4.5rem;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.sobre-subtitulo {
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    font-family: Verdana, sans-serif;
+}
+
+.sobre-cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+.sobre-card {
+    width: 320px;
+    background: rgba(12, 14, 45, 0.85);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: left;
+}
+
+.sobre-card h3 {
+    color: #4d7cff;
+    margin-bottom: 15px;
+}
+
+.sobre-card p {
+    line-height: 1.7;
+    color: rgba(255,255,255,0.85);
+}
+
+.foguete-gif {
+    position: absolute;
+    bottom: -50px;
+    right: 100px;
+    width: 100px;
+    animation: subir 6s linear infinite;
+}
+
+@keyframes subir {
+    0% { transform: translateY(0); opacity: 0; }
+    10% { opacity: 1; }
+    100% { transform: translateY(-120vh); opacity: 0; }
+}
+
+.sobre-content {
+    background: #0a0a1a;
+    min-height: 100vh;
+    padding: 80px 8%;
+    margin: 0;
+}
+
+.cards-baixo {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card-inovacao {
+    background-image: linear-gradient(rgba(5, 8, 30, 0.75), rgba(5, 8, 30, 0.75)),
+    url("../img/in-sobre.png");
+    background-position: bottom;
+}
+
+.card-treinamento {
+    background-image: linear-gradient(rgba(5, 8, 30, 0.75), rgba(5, 8, 30, 0.75)),
+    url("../img/trei-sobre.png");
+    background-position: center;
+}
+
+.card-sustentabilidade {
+    background-image: linear-gradient(rgba(5, 8, 30, 0.75), rgba(5, 8, 30, 0.75)),
+    url("../img/sust-sobre.png");
+    background-position: center 80%;
+}
+
+.card-visaofuturo {
+    background-image: linear-gradient(rgba(5, 8, 30, 0.75), rgba(5, 8, 30, 0.75)),
+    url("../img/vis-sobre.png");
+    background-position: center 80%;
+}
+
+.card-parceria {
+    background-image: linear-gradient(rgba(5, 8, 30, 0.75), rgba(5, 8, 30, 0.75)),
+    url("../img/parceria.png");
+    background-position: center 80%;
+    background-size: 120%;
+}
+
+.card-experiencia {
+    background-image: linear-gradient(rgba(5, 8, 30, 0.75), rgba(5, 8, 30, 0.75)),
+    url("../img/expe-sobre.png");
+    background-position: center 80%;
 }
