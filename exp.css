@@ -1,0 +1,343 @@
+body {
+  background-color: #0a0e27;
+  color: #e0e0e0;
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 90px; /* reserva espaço pro header fixo */
+}
+ 
+/* Título */
+.titulo-exp {
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+.subtitulo-exp {
+  color: #9aa0c0;
+}
+ 
+/* ===== HEADER / NAV ===== */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(10, 10, 26, 0.85);
+  backdrop-filter: blur(8px);
+}
+ 
+.nav {
+  padding: 16px 0;
+}
+ 
+.nav .container-fluid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+ 
+.navbar-brand img {
+  height: 40px;
+}
+ 
+#menuDesktop .navbar-nav {
+  flex-direction: row !important;
+  gap: 24px;
+  margin: 0 auto;
+  list-style: none;
+}
+ 
+.nav-link {
+  color: #ffffff !important;
+  font-size: 0.95rem;
+  padding: 6px 12px;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+ 
+.nav-link:hover {
+  color: #4d8aff !important;
+}
+ 
+/* ===== BOTÃO DO CARRINHO (no header) ===== */
+.btn-carrinho {
+  position: relative;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+.btn-carrinho:hover {
+  border-color: #4d8aff;
+  background: rgba(77, 138, 255, 0.15);
+}
+/* a "bolinha" vermelha com a quantidade */
+.badge-carrinho {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #4cc9f0;
+  color: #0a0e27;
+  font-size: 0.7rem;
+  font-weight: bold;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+/* ===== HERO (banner do topo) ===== */
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% -10%, rgba(77, 138, 255, 0.28), transparent 60%),
+    radial-gradient(ellipse at 85% 90%, rgba(67, 97, 238, 0.18), transparent 55%),
+    #0a0e27;
+}
+/* campo de estrelas (geradas só com CSS) */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, #fff, transparent),
+    radial-gradient(1px 1px at 60px 120px, #fff, transparent),
+    radial-gradient(1px 1px at 140px 70px, #fff, transparent),
+    radial-gradient(1px 1px at 180px 160px, #fff, transparent),
+    radial-gradient(2px 2px at 100px 50px, #cfe0ff, transparent);
+  background-repeat: repeat;
+  background-size: 220px 220px;
+  opacity: 0.5;
+  animation: piscar 6s ease-in-out infinite alternate;
+}
+@keyframes piscar {
+  from { opacity: 0.3; }
+  to   { opacity: 0.7; }
+}
+.hero-conteudo {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+.hero-kicker {
+  color: #4cc9f0;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.hero-titulo {
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.hero-sub {
+  color: #b8c0e0;
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+}
+.btn-hero {
+  background: #4361ee;
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s, background 0.3s;
+}
+.btn-hero:hover {
+  background: #3a0ca3;
+  transform: translateY(-3px);
+  color: #fff;
+}
+ 
+/* faz a seção parar abaixo do header ao clicar nos links/âncoras */
+#experiencias {
+  scroll-margin-top: 100px;
+}
+ 
+/* Card */
+.card-exp {
+  position: relative;
+  height: 460px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+ 
+/* Escurece a parte de baixo pro texto ficar legível */
+.card-exp::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 25%, transparent 75%);
+}
+ 
+/* Efeito mouse */
+.card-exp:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+ 
+/* texto por cima do escurecido */
+.card-exp-conteudo {
+  position: relative;
+  z-index: 1;
+  padding: 24px;
+  width: 100%;
+}
+.card-exp-conteudo h3 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.preco {
+  color: #c0c5e0;
+  font-size: 0.9rem;
+}
+.preco span {
+  color: #4cc9f0;
+  font-weight: bold;
+}
+ 
+/* ===== ESPECIFICAÇÕES DENTRO DO CARD ===== */
+.card-specs {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+.card-specs li {
+  color: #cfd6f0;
+  font-size: 0.78rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.card-specs li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4cc9f0;
+  flex-shrink: 0;
+}
+ 
+/* Botão de confirmar */
+.btn-confirmar {
+  background-color: #4361ee;
+  color: #fff;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.3s;
+}
+.btn-confirmar:hover {
+  background-color: #3a0ca3;
+}
+ 
+/* ===== ANIMAÇÃO DE ENTRADA DOS CARDS AO ROLAR ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
+/* ===== FOOTER ===== */
+.footer {
+  background: #06081a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 48px 0 24px;
+  margin-top: 80px;
+}
+.footer h6 {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.footer p,
+.footer a {
+  color: #8b93b8;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+.footer a:hover {
+  color: #4d8aff;
+}
+.footer-marca {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.footer-copy {
+  text-align: center;
+  color: #5a6088;
+  font-size: 0.85rem;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+ 
+/* ===== celular ===== */
+.offcanvas {
+  background-color: #0a0a1a !important;
+  width: 280px !important;
+}
+.offcanvas-title {
+  color: #ffffff !important;
+}
+.offcanvas .nav-link {
+  color: #ffffff !important;
+  font-size: 1.1rem;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.offcanvas .nav-link:hover {
+  color: #4d8aff !important;
+}
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-toggler-icon {
+  filter: invert(1);
+}
