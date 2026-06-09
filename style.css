@@ -437,22 +437,34 @@ content h2 {
 }
 
 .hero-preparacao {
-  height: 520px;
+  height: 700px;
   padding: 120px 0 80px;
   color: rgb(255, 255, 255);
+  
+
 
   background:
-    linear-gradient(
+  linear-gradient(
+    0deg,
+    rgba(5, 8, 22, 1) 8%,
+    rgba(5, 8, 22, 0) 45%
+  ),
+  
+  linear-gradient(
       90deg,
       rgba(5, 8, 22, 0.95) 0%,
       rgba(5, 8, 22, 0.75) 35%,
-      rgba(5, 8, 22, 0.2) 50%
+      rgba(5, 8, 22, 0.0) 50%
     ),
     url("./img/preparação.png");
   
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom right;
   background-repeat: no-repeat;
+}
+
+.tag{
+  color: #4d8aff;
 }
 
 @media (max-width: 768px) {
@@ -482,6 +494,9 @@ content h2 {
 .etapas-preparacao {
   background-color: #050816;
   color: white;
+  margin-top: -100px;
+  
+  
 }
 
 .etapas-preparacao p {
@@ -489,11 +504,12 @@ content h2 {
 }
 
 .card-etapa {
-  height: 100%;
+  height: auto;
   border-radius: 20px;
   padding: 10px;
   background: #050816;;
   border: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: -100px;
 }
 
 .card-etapa span {
@@ -535,4 +551,121 @@ content h2 {
     object-fit: cover;
     border-radius: 15px;
     border: #ffffff1f solid 0.1px;
+}
+
+@media (max-width: 768px){
+
+    .card-etapa img{
+        height: 250px;
+    }
+
+}
+
+.row-card-etapa {
+  row-gap: 100px;
+}
+
+@media (max-width: 768px) {
+  .row-card-etapa {
+    row-gap: 100px;
+  }
+}
+
+.card-etapa:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(30, 107, 255, 0.3);
+}
+
+.cta-preparacao {
+  padding: 40px;
+  background-color: #050816;
+}
+
+.cta-preparacao .container {
+  background: #050816;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.icone-cta{
+    width: 90px;
+    height: 90px;
+    min-width: 90px;
+    border-radius: 50%;
+    border: 1px solid rgba(61,139,255,0.5);
+    background: rgba(61,139,255,0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-cta i{
+    font-size: 2rem;
+    color: #5da2ff;
+}
+
+.conteudo-cta{
+    flex: 1;
+}
+
+.conteudo-cta h3{
+    color: white;
+
+    margin-bottom: 10px;
+
+    font-size: 2rem;
+}
+
+.conteudo-cta p{
+    color: #bfc7d5;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.btn-cta{
+    background: #2f6fff;
+    color: white;
+    text-decoration: none;
+    padding: 18px 35px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .3s;
+}
+
+.btn-cta:hover{
+    transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(30, 107, 255, 0.3);
+}
+
+@media (max-width: 768px){
+
+    .cta-preparacao{
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .btn-cta{
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .cta-preparacao .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
