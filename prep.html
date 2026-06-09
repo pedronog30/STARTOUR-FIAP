@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startour</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  
+    <body>
+
+            <!-- Barra de navegação -->
+      <header class="header">
+     <nav class="nav navbar navbar-expand-lg">
+        <div class="container-fluid">
+         <a class="navbar-brand" href="home.html">
+             <img src="./img/startour_logo_transparente.png" alt="Startour" height="40" />
+          </a>
+
+          <!-- Links desktop -->
+        <div class="collapse navbar-collapse" id="menuDesktop">
+            <ul class="navbar-nav mx-auto">
+             <li class="nav-item"><a class="nav-link" href="home.html">Início</a></li>
+             <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+             <li class="nav-item"><a class="nav-link" href="exp.html">Experimente</a></li>
+             <li class="nav-item"><a class="nav-link" href="prep.html">Preparação</a></li>
+             <li class="nav-item"><a class="nav-link" href="seg.html">Segurança</a></li>
+             <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+              </ul>
+          </div>
+
+          <!-- Botão hamburguer (só no mobile) -->
+          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Offcanvas mobile (fora do header) -->
+    <div class="offcanvas offcanvas-end" id="menuNav">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-white">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="home.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="exp.html">Experimente</a></li>
+          <li class="nav-item"><a class="nav-link" href="prep.html">Preparação</a></li>
+          <li class="nav-item"><a class="nav-link" href="seg.html">Segurança</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+        <section class="hero-preparacao">
+    <div class="container">
+        <span class="tag"><b>PREPARAÇÃO</b></span>
+
+        <h1>Prepare-se para<br>sua jornada</h1>
+
+        <p>
+        Nossas missões são planejadas nos mínimos detalhes para que você viva
+        uma<br>experiência única e segura. Confira as etapas da sua preparação antes
+        do embarque.
+        </p>
+    </div>
+    </section>
+
+    <section class="etapas-preparacao py-5">
+  <div class="container">
+
+    <div class="row g-4 row-card-etapa">
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card-etapa">
+            <span><i class="fa-regular fa-heart"></i>01</span>
+            <h3>Avaliação inicial</h3>
+            <p>Exames físicos e avaliações médicas para garantir que você esteja apto para a missão escolhida.</p>
+            <img src="./img/preparação-avaliação.png" alt="Checklist" class="img-etapa">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card-etapa">
+            <span><i class="fa-solid fa-graduation-cap"></i>02</span>
+            <h3>Treinamento</h3>
+            <p>Treinamentos teóricos e práticos sobre gravidade zero, equipamentos, comunicação e procedimentos de segurança.</p>
+            <img src="./img/preparação-treinamento.png" alt="Treinamento" class="img-etapa">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card-etapa">
+            <span><i class="fa-solid fa-rocket"></i>03</span>
+            <h3>Simulação</h3>
+            <p>Simulações realistas de todas as etapas da missão: decolagem, órbita, experiência e retorno à Terra.</p>
+            <img src="./img/preparação-simulação.png" alt="Simulação" class="img-etapa">
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card-etapa">
+            <span><i class="fa-regular fa-clipboard"></i>04</span>
+            <h3>Checklist final</h3>
+            <p>Conferência de documentos, traje espacial, equipamentos e instruções finais para sua missão espacial.</p>
+            <img src="./img/preparação-checklist.png" alt="Checklist" class="img-etapa">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-preparacao">
+    <div class="container">
+  
+        <div class="icone-cta">
+            <i class="fa-regular fa-calendar-days"></i>
+        </div>
+        <div class="conteudo-cta">
+            <h3>Tudo pronto para embarcar?</h3>
+            <p>
+                Após a conclusão de todas as etapas, nossa equipe irá
+                confirmar sua missão e agendar sua data de lançamento.
+            </p>
+        </div>
+     
+        <a href="exp.html" class="btn-cta">
+            Ver pacotes disponíveis
+            <i class="fa-solid fa-chevron-right"></i>
+          
+      </a>
+    </div>
+</section>
+
+  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
